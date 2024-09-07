@@ -1,0 +1,120 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* Allow absolute positioning of child elements */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #555;
+  border-bottom: 2px solid #007bff; /* Adjust thickness if needed */
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  display: inline-block; /* Make the heading inline-block to restrict width */
+}
+
+p,
+ul,
+li {
+  color: #666;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 8px 0;
+  padding-left: 5px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+.personal-info {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px;
+  margin-bottom: 20px; /* Add space below the personal info */
+}
+
+.profile-picture {
+  width: 120px; /* Adjust width as needed */
+  height: 120px; /* Ensure height matches width for a square shape */
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners for the square image */
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align the image to the top */
+  position: absolute; /* Change to absolute positioning */
+  top: 20px; /* Adjust this value to move the image down */
+  left: 20px; /* Adjust this value to move the image right */
+}
+
+.profile-picture img {
+  width: auto; /* Allow the width to adjust automatically */
+  height: 100%; /* Keep the height fixed */
+  object-fit: cover; /* Ensure image covers the container */
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+}
