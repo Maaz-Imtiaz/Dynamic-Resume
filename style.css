@@ -83,51 +83,21 @@ button:focus {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: absolute;
   top: 20px;
   left: 20px;
 }
 
 .profile-picture img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   object-fit: cover;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 1200px) {
-  .resume-container {
-    padding: 25px;
-  }
-}
-
-@media (max-width: 992px) {
-  .resume-container {
-    padding: 20px;
-  }
-
-  .personal-info {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-picture {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-  }
-
-  .profile-picture img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media (max-width: 768px) {
   .resume-container {
-    padding: 15px;
+    padding: 20px;
   }
 
   h1 {
@@ -144,32 +114,8 @@ button:focus {
   }
 
   .profile-picture {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-@media (max-width: 576px) {
-  .resume-container {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
-  button {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-
-  .profile-picture {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
   }
 }
 
