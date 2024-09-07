@@ -39,8 +39,8 @@ li {
 }
 
 ul {
-  list-style-type: none;
-  padding-left: 0;
+  list-style-type: circle;
+  padding-left: 20px;
 }
 
 li {
@@ -117,4 +117,14 @@ button:focus {
     width: 100px;
     height: 100px;
   }
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007bff;
 }
