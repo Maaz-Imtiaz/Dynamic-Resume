@@ -1,4 +1,3 @@
-// Define the IResume interface
 interface IResume {
   name: string;
   email: string;
@@ -8,7 +7,6 @@ interface IResume {
   workExperience: string[];
 }
 
-// Create a Resume class implementing IResume
 class Resume implements IResume {
   constructor(
     public name: string,
@@ -32,7 +30,6 @@ class Resume implements IResume {
   }
 }
 
-// TypeScript code to toggle the visibility of the skills section
 const toggleSkillsButton = document.getElementById("toggle-skills");
 const skillsSection = document.querySelector(".skills") as HTMLElement | null;
 
