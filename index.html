@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
+    <title>Dynamic Resume Builder</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,57 +16,85 @@
         </div>
         <div class="info-details">
           <h2>Personal Information</h2>
-          <p><strong>Name:</strong> Neha</p>
+          <p><strong>Name:</strong> <span id="name-display"></span></p>
           <p>
             <strong>Email:</strong>
-            <a href="mailto:captainneha8@gmail.com">captainneha8@gmail.com</a>
+            <a href="mailto:" id="email-display"></a>
           </p>
-          <p><strong>Phone:</strong> +92-308-2434899</p>
+          <p>
+            <strong>Phone:</strong>
+            <span id="phone-display"></span>
+          </p>
           <p>
             <strong>LinkedIn:</strong>
-            <a
-              href="https://www.linkedin.com/in/your-linkedin-profile"
-              target="_blank"
-            >
-              https://www.linkedin.com/in/nuha-captain-7a4080319
-            </a>
+            <a href="" target="_blank" id="linkedin-display"></a>
           </p>
         </div>
       </section>
 
       <section class="work-experience">
         <h2>Work Experience</h2>
-        <ul id="experience-list">
-          <li>Software Developer - XYZ Company, Karachi (2024-Present)</li>
-          <li>Software Developer Intern - XYZ Company, Karachi (2023-2024)</li>
-        </ul>
+        <ul id="experience-list"></ul>
       </section>
 
       <section class="skills">
         <h2>Skills</h2>
-        <ul id="skills-list">
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>WordPress</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
+        <ul id="skills-list"></ul>
       </section>
 
       <section class="education">
         <h2>Education</h2>
-        <ul id="education-list">
-          <li>
-            BS Computer Science - Metropolitian University, Karachi (2019-2023)
-          </li>
-          <li>
-            Intermediate Computer Science - Sir Syed Girls College, Karachi
-            (2016-2018)
-          </li>
-        </ul>
+        <ul id="education-list"></ul>
       </section>
 
       <button id="toggle-skills">Toggle Skills</button>
+    </div>
+
+    <div class="form-container">
+      <h2>Edit Resume</h2>
+      <form id="resume-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="linkedin">LinkedIn:</label>
+        <input
+          type="url"
+          id="linkedin"
+          placeholder="Enter your LinkedIn profile URL"
+          required
+        />
+
+        <label for="experience">Add Experience:</label>
+        <input
+          type="text"
+          id="experience"
+          placeholder="Enter your work experience"
+        />
+
+        <label for="skill">Add Skill:</label>
+        <input type="text" id="skill" placeholder="Enter a skill" />
+
+        <label for="education">Add Education:</label>
+        <input type="text" id="education" placeholder="Enter your education" />
+
+        <button type="submit">Update Resume</button>
+      </form>
     </div>
 
     <script src="script.js"></script>
